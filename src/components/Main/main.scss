@@ -1,6 +1,9 @@
 .main{
     grid-row: 3/4;
     align-self: center;
+    @media (min-width: 700px) {
+        padding: 0 50px;
+    }
     &__title{
         color: white;
         font-size: 15vw;
