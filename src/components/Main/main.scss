@@ -1,7 +1,9 @@
+@import '../../mixins.scss';
+
 .main{
     grid-row: 3/4;
     align-self: center;
-    @media (min-width: 700px) {
+    @include desktop {
         padding: 0 50px;
     }
     &__title{
@@ -9,7 +11,7 @@
         font-size: 15vw;
         align-items: center;
         text-align: center;
-        @media (min-width: 700px) {
+        @include desktop{
             text-align: left;
             font-size:70px
         }
@@ -18,7 +20,7 @@
         color: rgba(255, 255, 255, 0.6);
         font-size: 4vw;
         text-align: center;
-        @media (min-width: 700px) {
+        @include desktop {
             text-align: left;
             font-size:25px
         }

@@ -1,11 +1,12 @@
+@import '../../mixins.scss';
+
 .footer{
     grid-row: 5/6;
     justify-self: center;
     align-self: center;
     &__link{
-        @media (min-width: 700px) {
+        @include desktop {
             margin: 0px 30px 30px 30px;
         }
-        
     }
 }
