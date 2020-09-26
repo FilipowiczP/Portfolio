@@ -1,5 +1,6 @@
 import React from 'react';
 import './scss/learning.scss';
+import PropTypes from 'prop-types';
 
 import learning from './skills/learning';
 
@@ -17,5 +18,9 @@ const Learning = ({slide}) =>{
         </div>
     );
 };
+
+Learning.prototype = {
+    slide: PropTypes.number.isRequired
+}
 
 export default Learning;

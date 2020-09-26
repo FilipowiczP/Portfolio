@@ -1,5 +1,6 @@
 import React from 'react';
 import './scss/backend.scss';
+import PropTypes from 'prop-types';
 
 import backend from './skills/backend';
 
@@ -17,5 +18,9 @@ const Backend = ({slide}) =>{
         </div>
     );
 };
+
+Backend.prototype = {
+    slide: PropTypes.number.isRequired
+}
 
 export default Backend;

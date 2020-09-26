@@ -29,18 +29,18 @@ const Skill = () =>{
 
     return(
         <section className="skill">
-            <h1>Umiejętności</h1>
+            <h1 className="skill__title">Umiejętności</h1>
 
-            <div>
-                <h1>Technologie</h1>
-                <div>
-                    <p onClick={handleFrontend}>Frontend</p>
-                    <p onClick={handleBackend}>Backend</p>
-                    <p onClick={handleTools}>Narzędzia</p>
-                    <p onClick={handleLearning}>W trakcie nauki</p>
+            <div className="skill__content">
+                <h1 className="skill__content__title">Technologie</h1>
+                <div className="skill__content__box">
+                    <p className="skill__content__box__skill" onClick={handleFrontend}>Frontend</p>
+                    <p className="skill__content__box__skill" onClick={handleBackend}>Backend</p>
+                    <p className="skill__content__box__skill" onClick={handleTools}>Narzędzia</p>
+                    <p className="skill__content__box__skill" onClick={handleLearning}>W trakcie nauki</p>
                 </div>
-                <img src={close} alt="close" />
             </div>
+            <img src={close} alt="close" className="skill__content__close" />
            <Frontend slide={slide}/>
            <Backend slide={slide}/>
            <Tools slide={slide}/>

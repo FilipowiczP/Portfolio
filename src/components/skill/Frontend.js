@@ -1,5 +1,6 @@
 import React from 'react';
 import './scss/frontend.scss';
+import PropTypes from 'prop-types';
 
 import frontend from './skills/frontend';
 
@@ -17,5 +18,9 @@ const Frontend = ({slide}) =>{
         </div>
     );
 };
+
+Frontend.prototype = {
+    slide: PropTypes.number.isRequired
+}
 
 export default Frontend;

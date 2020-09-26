@@ -1,5 +1,6 @@
 import React from 'react';
 import './scss/tools.scss';
+import PropTypes from 'prop-types';
 
 import tools from './skills/tools';
 
@@ -17,5 +18,9 @@ const Tools = ({slide}) =>{
         </div>
     );
 };
+
+Tools.prototype = {
+    slide: PropTypes.number.isRequired
+}
 
 export default Tools;

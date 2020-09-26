@@ -1,17 +1,24 @@
+@import '../../../mixins.scss';
+
 .frontend{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     text-align: center;
+    @include desktop{
+        grid-row: 2/4;
+        grid-column: 2/3;
+    }
     &-hide{
         display: none;
     }
     &__skill{
         &__img{
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             object-fit: contain;
             background-color: white;
-            margin: 10px;
+            margin: auto;
         }
     }
 }
