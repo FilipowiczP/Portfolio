@@ -1,16 +1,17 @@
 import React from 'react';
+import './scss/backend.scss';
 
 import backend from './skills/backend';
 
-const Backend = () =>{
+const Backend = ({slide}) =>{
     return(
-        <div>
-            {backend.map(({name, img})=>{
+        <div className={slide === 1 ? "backend" : "backend-hide"}>
+            {backend.map(({name, img}, index)=>{
                 return(
-                    <>
-                        <img src={img} alt="img"/>
+                    <div key={index} className="backend__skill">
+                        <img  src={img} alt="img" className="backend__skill__img"/>
                         <p>{name}</p>
-                    </>
+                    </div>
                 )
             })}
         </div>

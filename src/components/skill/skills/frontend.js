@@ -1,9 +1,9 @@
-import html from '../../images/html.png';
-import css from '../../images/css.png';
-import js from '../../images/js.png';
-import sass from '../../images/sass.png';
-import react from '../../images/react.png';
-import bootstrap from '../../images/bootstrap.png';
+import html from '../../../images/html.png';
+import css from '../../../images/css.png';
+import js from '../../../images/js.png';
+import sass from '../../../images/sass.png';
+import react from '../../../images/react.png';
+import bootstrap from '../../../images/bootstrap.png'
 
 const frontend = [
     {

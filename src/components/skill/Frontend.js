@@ -1,16 +1,17 @@
 import React from 'react';
+import './scss/frontend.scss';
 
 import frontend from './skills/frontend';
 
-const Frontend = () =>{
+const Frontend = ({slide}) =>{
     return(
-        <div>
-            {frontend.map(({name, img})=>{
+        <div className={slide === 0 ? "frontend" : "frontend-hide"}>
+            {frontend.map(({name, img}, index)=>{
                 return(
-                    <>
-                        <img src={img} alt="img"/>
+                    <div key={index} className="frontend__skill">
+                        <img  src={img} alt="img" className="frontend__skill__img"/>
                         <p>{name}</p>
-                    </>
+                    </div>
                 )
             })}
         </div>

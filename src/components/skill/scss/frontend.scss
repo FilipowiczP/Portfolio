@@ -1,0 +1,17 @@
+.frontend{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    &-hide{
+        display: none;
+    }
+    &__skill{
+        &__img{
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            background-color: white;
+            margin: 10px;
+        }
+    }
+}

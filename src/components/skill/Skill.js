@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './scss/skill.scss';
 
 import close from '../../images/close.png'
 import Frontend from './Frontend';
@@ -27,7 +28,7 @@ const Skill = () =>{
     }
 
     return(
-        <section>
+        <section className="skill">
             <h1>Umiejętności</h1>
 
             <div>
@@ -48,4 +49,4 @@ const Skill = () =>{
     );
 };
 
-export default Skill
+export default Skill;

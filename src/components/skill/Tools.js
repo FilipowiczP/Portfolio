@@ -1,16 +1,17 @@
 import React from 'react';
+import './scss/tools.scss';
 
 import tools from './skills/tools';
 
-const Tools = () =>{
+const Tools = ({slide}) =>{
     return(
-        <div>
-            {tools.map(({name, img})=>{
+        <div className={slide === 2 ? "tools" : "tools-hide"}>
+            {tools.map(({name, img}, index)=>{
                 return(
-                    <>
-                        <img src={img} alt="img"/>
+                    <div key={index} className="tools__skill">
+                        <img src={img} alt="img" className="tools__skill__img"/>
                         <p>{name}</p>
-                    </>
+                    </div>
                 )
             })}
         </div>
