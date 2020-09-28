@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './settings.scss';
 
 import Navigation from './components/Navigation/Navigation';
 import Main from './components/Main/Main';
-import Footer from './components/Footer/Footer';
 import Skill from './components/Skill/Skill';
 
 function App() {
+
+  const [show, setShow] = useState(null);
+
+  const check = (value) =>{
+    return setShow(value)
+  }
+
   return (
     <>
-      <Navigation />
+      <Navigation check={check}/>
       <Main />
-      <Footer />
-      <Skill />
+      <Skill show={show}/>
     </>
   );
 }

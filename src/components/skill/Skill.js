@@ -7,9 +7,9 @@ import Backend from './Backend';
 import Tools from './Tools';
 import Learning from './Learning';
 
-const Skill = () =>{
+const Skill = ({show}) =>{
 
-    const [slide, setSlide] = useState (0)
+    const [slide, setSlide] = useState (0);
 
     const handleFrontend = () =>{
         setSlide(0)
@@ -28,7 +28,7 @@ const Skill = () =>{
     }
 
     return(
-        <section className="skill">
+        <section className={show === 2 ? "skill skill-show" : "skill"}>
             <h1 className="skill__title">Umiejętności</h1>
 
             <div className="skill__content">
