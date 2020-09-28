@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './scss/skill.scss';
 
-import close from '../../images/close.png'
 import Frontend from './Frontend';
 import Backend from './Backend';
 import Tools from './Tools';
@@ -40,7 +39,6 @@ const Skill = ({show}) =>{
                     <p className="skill__content__box__skill" onClick={handleLearning}>W trakcie nauki</p>
                 </div>
             </div>
-            <img src={close} alt="close" className="skill__content__close" />
            <Frontend slide={slide}/>
            <Backend slide={slide}/>
            <Tools slide={slide}/>
