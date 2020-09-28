@@ -21,6 +21,7 @@
     &__title{
         align-self: center;
         position: relative;
+        font-family: 'Cinzel', serif;
         &::before{
             content: '';
             width: 50px;
@@ -58,9 +59,15 @@
         background-color: black;
         color: white;
         @include desktop{
-            grid-row: 2/3;
+            grid-row: 2/4;
             justify-self: center;
             align-self: center;
+        }
+        &__title{
+            font-family: 'Cinzel', serif;
+            @include desktop{
+                font-size: 32px;
+            }
         }
         &__box{
             width: 60%;
@@ -68,6 +75,7 @@
                 cursor: pointer;
                 margin: 10px;
                 border-bottom: 1px solid white;
+                font-size: 20px;
                 &:hover{
                     transition: 1s;
                     background-color: white;

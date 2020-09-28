@@ -1,9 +1,12 @@
 @import '../../../mixins.scss';
+@import '../../../animation.scss';
 
 .learing{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    animation: show 2s;
+    padding: 10px;
     @include desktop{
         grid-row: 2/4;
         grid-column: 2/3;
