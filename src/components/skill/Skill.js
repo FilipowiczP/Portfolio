@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './scss/skill.scss';
+import PropTypes from 'prop-types';
 
 import Frontend from './Frontend';
 import Backend from './Backend';
@@ -45,6 +46,10 @@ const Skill = ({show}) =>{
            <Learning slide={slide}/>
         </section>
     );
+};
+
+Skill.prototype = {
+    show: PropTypes.number.isRequired
 };
 
 export default Skill;

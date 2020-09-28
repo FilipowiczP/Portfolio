@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navigation.scss';
+import PropTypes from 'prop-types';
 
 import person from '../../images/person.png';
 import skill from '../../images/skill.png';
@@ -51,6 +52,10 @@ const Navigation = ({check}) =>{
             </>
         );
     };
+}
+
+Navigation.prototype = {
+    check: PropTypes.func.isRequired
 }
 
 export default Navigation;

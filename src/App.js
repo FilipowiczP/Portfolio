@@ -17,7 +17,7 @@ function App() {
     <>
       <Navigation check={check}/>
       <Main />
-      <Skill show={show}/>
+      <Skill show={show} />
     </>
   );
 }
