@@ -21,7 +21,8 @@
             height: 120px;
             object-fit: contain;
             background-color: white;
-            margin: auto;
+            margin: auto; 
+            animation: scale 3s infinite ;
         }
     }
 }
