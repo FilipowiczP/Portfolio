@@ -3,3 +3,13 @@
         @content;
     }
 }
+
+@mixin sectionSettings {
+    background-color: white;
+    height: calc(100% * ( 8 / 9 ));
+    width: 100vw;
+    position: fixed;
+    top: calc(100% / 9);
+    transition: 2s;
+    transform: translateY(100%);
+}
