@@ -11,7 +11,7 @@ const Project = ({show}) =>{
             <div className="project__slider">
                 {projects.map(({img},index)=>{
                     return(
-                        <span className={"project__slider__span"+index}>
+                        <span key={index} className={"project__slider__span"+index}>
                             <img key={index} src={img} alt="project" className="project__slider__img"/>
                         </span>
                     ) 

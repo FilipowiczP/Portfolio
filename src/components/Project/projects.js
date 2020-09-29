@@ -5,12 +5,12 @@ import rumholic from '../../images/rumholic.png';
 
 const projects =[
     {
-        name:"car sharing",
-        img:carSharing
-    },
-    {
         name:"bestShop",
         img:bestShop
+    },
+    {
+        name:"car sharing",
+        img:carSharing
     },
     {
         name:"give clothes",
