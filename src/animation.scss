@@ -15,3 +15,12 @@
         transform: scale(1);
     }
 }
+
+@keyframes projects{
+    0%{
+        transform: perspective(2000px) rotateY(0deg);
+    }
+    0%{
+        transform: perspective(2000px) rotateY(360deg);
+    }
+}
