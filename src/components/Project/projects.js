@@ -14,13 +14,13 @@ const projects =[
     },
     {
         name:"Car Sharing",
-        description:"Pierwszy projekt stworzony podczas bootcamp w Coders Lab",
+        description:"Pierwszy projekt stworzony podczas bootcamp w Coders Lab.",
         technology:"HTML, CSS",
         img:carSharing,
     },
     {
         name:"Give Clothes",
-        description:"Jest to projekt stworzony przes absolewntów 'UX digital designer' z coders lab, Cały projekt był przygotowany na platformie trello oraz adobe xd",
+        description:"Jest to projekt stworzony przes absolewntów 'UX digital designer' z coders lab, Cały projekt był przygotowany na platformie trello oraz adobe xd.",
         technology:"React, Sass, RWD, Npm, Firebase",
         img:clothes,
     },
