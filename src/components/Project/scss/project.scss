@@ -2,21 +2,32 @@
 @import '../../../animation.scss';
 
 .project{
-    @include sectionSettings;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px 2fr 1fr ;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr;
+    @include sectionSettings;
+    @include desktop{
+        display: grid;
+        grid-template-rows: 150px 2fr 1fr;  
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     &-show{
         transform: translateY(0);
+        background-color: black;
+        @include desktop{
+            background-color: white;
+        }
     }
     &__title{
-        align-self: center;
         position: relative;
         font-family: 'Cinzel', serif;
-        grid-row: 1/2;
-        grid-column: 1/5;
         justify-self: center;
         align-self: center;
+        grid-row: 1/2;
+        grid-column: 1/6;
+        color: white;
+        background-color: black;
+        
         &::before{
             content: '';
             width: 50px;
@@ -24,7 +35,10 @@
             position: absolute;
             left: -50%;
             top: 45%;
-            border: 2px solid black;
+            border: 2px solid white;
+            @include desktop{
+                border: 2px solid black;
+            }
         }
         &::after{
             content: '';
@@ -33,10 +47,15 @@
             position: absolute;
             right: -50%;
             top: 45%;
-            border: 2px solid black;
+            border: 2px solid white;
+            @include desktop{
+                border: 2px solid black;
+            }
         }
         @include desktop{
             font-size: 35px;
+            color: black;
+            background-color: white;
          }
     }
     &__slider{

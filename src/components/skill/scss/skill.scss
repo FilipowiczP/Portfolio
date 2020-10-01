@@ -52,7 +52,10 @@
         text-align: center;
         background-color: black;
         color: white;
+        grid-row: 2/3;
+        grid-column: 1/4;
         @include desktop{
+            grid-column: 1/2;
             grid-row: 2/4;
             justify-self: center;
             align-self: center;

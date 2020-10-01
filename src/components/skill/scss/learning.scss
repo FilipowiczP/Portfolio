@@ -7,6 +7,7 @@
     text-align: center;
     animation: show 2s;
     padding: 10px;
+    grid-row: 3/4;
     @include desktop{
         grid-row: 2/4;
         grid-column: 2/3;
