@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './project.scss';
+import './scss/project.scss';
 
 import projects from './projects';
+import ProjectCard from './ProjectCard';
 
 const Project = ({show}) =>{
     return(
@@ -17,6 +18,7 @@ const Project = ({show}) =>{
                     ) 
                 })}
             </div>
+            <ProjectCard />
         </section>
     );
 };
