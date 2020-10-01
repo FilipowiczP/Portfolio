@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './scss/cards.scss'
 
+import inSite from '../../images/site.png'
 import projects from './projects';
 
 const ProjectCard = () =>{
@@ -16,6 +18,7 @@ const ProjectCard = () =>{
                             <h1 className="projectCard__box__content__title">{name}</h1>
                             <h2 className="projectCard__box__content__text">{technology}</h2>
                             <p className="projectCard__box__content__description">{description}</p>
+                            <Link to="/"><img src={inSite} alt="" /></Link>
                         </div>
                     </div>
             )
