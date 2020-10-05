@@ -6,6 +6,7 @@ import Navigation from '../components/Navigation/Navigation';
 import Main from '../components/Main/Main';
 import Skill from '../components/Skill/Skill';
 import Project from '../components/Project/Project';
+import AboutMe from '../components/AboutMe/AboutMe';
 
 const Home = () =>{
     const [show, setShow] = useState(null);
@@ -20,6 +21,7 @@ const Home = () =>{
         <Main />
         <Skill show={show} />
         <Project show={show} />
+        <AboutMe show={show} />
       </>
     );
 };
