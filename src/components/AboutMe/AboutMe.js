@@ -7,7 +7,7 @@ const AboutMe = ({show}) =>{
             <h1 className="aboutMe__title">O mnie</h1>
             <div className="aboutMe__me">
                 <h2 className="aboutMe__me__title">Kim jestem?</h2>
-                <p className="aboutMe__me__content">Od roku uczę się tworzyć strony internetowe. Głównie pracuję z JavaScript (React). Interesuje mnie zarówno Frontend jak i Backend</p>
+                <p className="aboutMe__me__content">Od roku uczę się tworzyć strony internetowe. Głównie pracuję z JavaScript (React). Interesuje mnie zarówno Frontend jak i Backend.</p>
             </div>
             <div className="aboutMe__why">
                 <h2 className="aboutMe__why__title">Dlaczego programowanie</h2>
