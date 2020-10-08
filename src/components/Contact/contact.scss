@@ -1,0 +1,8 @@
+@import '../../mixins.scss';
+
+.contact{
+    @include sectionSettings;
+    &-show{
+        transform: translateY(0);
+    }
+}
