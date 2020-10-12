@@ -21,7 +21,7 @@ const Contact = ({show}) =>{
                     <input type="text" className="contact__form__topic__input"/>
                 </label>
                 <textarea className="contact__form__message" placeholder="Wiadomość"/>
-                <button type="submit">Wyślij</button>
+                <button type="submit" className="contact__form__button">Wyślij</button>
             </form>
         </section>
     );
