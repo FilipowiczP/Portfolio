@@ -10,13 +10,17 @@ const Contact = ({show}) =>{
             <form className="contact__form">
                 <label className="contact__form__name">
                     Imię
-                    <input type="text" />
+                    <input type="name"  className="contact__form__name__input"/>
                 </label>
                 <label className="contact__form__email">
                     Email
-                    <input type="email" />
+                    <input type="email" className="contact__form__email__input"/>
                 </label>
-                <textarea className="contact__form__message"/>
+                <label className="contact__form__topic">
+                    Temat
+                    <input type="text" className="contact__form__topic__input"/>
+                </label>
+                <textarea className="contact__form__message" placeholder="Wiadomość"/>
                 <button type="submit">Wyślij</button>
             </form>
         </section>
