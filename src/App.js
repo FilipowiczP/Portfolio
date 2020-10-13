@@ -1,17 +1,30 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React, { useState } from 'react';
+import './settings.scss';
 
-import Home from './Views/Home';
+import Navigation from './components/Navigation/Navigation';
+import Main from './components/Main/Main';
+import Skill from './components/Skill/Skill';
+import Project from './components/Project/Project';
+import AboutMe from './components/AboutMe/AboutMe';
+import Contact from './components/Contact/Contact';
 
+const App = () =>{
+    const [show, setShow] = useState(null);
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path='/' component={Home} />
-      </Switch>
-    </BrowserRouter>
-  );
-}
+    const check = (value) =>{
+      return setShow(value)
+    }
+  
+    return (
+      <>
+        <Navigation check={check}/>
+        <Main />
+        <Skill show={show} />
+        <Project show={show} />
+        <AboutMe show={show} />
+        <Contact show={show} />
+      </>
+    );
+};
 
 export default App;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './navigation.scss';
 import PropTypes from 'prop-types';
 
@@ -11,29 +11,32 @@ import contact from '../../images/contact.png';
 
 const Navigation = ({check}) =>{
 
-    const [section, setSection] = useState (null);
+    const [section, setSection] = useState (5);
 
     const handleAbout = () =>{
-        setSection(1)
+        setSection(1);
     }
 
     const handleSkills = () =>{
-        setSection(2)
+        setSection(2);
     }
     
     const handleProject = () =>{
-        setSection(3)
+        setSection(3);
     }
 
     const handleContact = () =>{
-        setSection(4)
+        setSection(4);
     }
 
     const handleClose = () =>{
-        setSection(5)
+        setSection(5);
     }
 
-    check(section);
+    useEffect(() => {
+        check(section);
+    });
+    
     
     if(window.innerWidth <= 700){
         return(

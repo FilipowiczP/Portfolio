@@ -45,4 +45,4 @@ Contact.prototype = {
     show: PropTypes.number.isRequired
 };
 
-export default Contact
+export default Contact;
