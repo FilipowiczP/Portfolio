@@ -8,18 +8,20 @@
     }
     &__title{
         color: white;
-        font-size: 15vw;
+        font-size: 13vw;
         align-items: center;
         text-align: center;
+        font-family: 'Cinzel', serif;
         @include desktop{
             text-align: left;
-            font-size:70px
+            font-size:60px
         }
     }
     &__description{
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.7);
         font-size: 4vw;
         text-align: center;
+        font-family: 'Cinzel', serif;
         @include desktop {
             text-align: left;
             font-size:25px

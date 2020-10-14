@@ -19,14 +19,14 @@ const projects =[
     },
     {
         name:"Give Clothes",
-        description:"Projekt służący pomocy. Na którym po zalogowaniu wypełniamy formularz w którym możemy wskazać miejsce i komu pomagamy.",
+        description:"Projekt służący pomocy potrzebującym. Po zalogowaniu wypełniamy formularz w którym możemy wskazać miejsce i osobę której chcemy pomóc.",
         technology:"React, Sass, RWD, Npm, Firebase",
         img:clothes,
     },
     {
         name:"rumholic.pl",
         description:"Jest to blog opisujący świat rumów. Część funkcji jest wyłączona z użytku, ponieważ klient na chwilę " + 
-        "obecną nie posiada wystarczającą ilość treści.",
+        "obecną nie posiada wystarczającej ilości treści.",
         technology:"React, Sass, RWD, Npm",
         img:rumholic,
     }

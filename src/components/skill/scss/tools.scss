@@ -18,12 +18,16 @@
     }
     &__skill{
         &__img{
-            width: 120px;
-            height: 120px;
+            width: 70px;
+            height: 70px;
             object-fit: contain;
             background-color: white;
             margin: auto;
             animation: scale 3s infinite ;
+            @include desktop{
+                width: 120px;
+                height: 120px;
+            }
         }
     }
 }

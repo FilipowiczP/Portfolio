@@ -50,7 +50,7 @@ const Contact = ({show}) =>{
 
     return(
         <section  className={show === 4 ? "contact contact-show" : "contact"}>
-            <h1 className="contact__title">Kontatk</h1>
+            <h1 className="contact__title">Kontakt</h1>
             <form className="contact__form" onSubmit={e => sendMail(e)}>
                 <label className="contact__form__name">
                     Imię
