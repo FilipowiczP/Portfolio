@@ -9,22 +9,23 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Contact from './components/Contact/Contact';
 
 const App = () =>{
-    const [show, setShow] = useState(null);
 
-    const check = (value) =>{
-      return setShow(value)
-    }
-  
-    return (
-      <>
-        <Navigation check={check}/>
-        <Main />
-        <Skill show={show} />
-        <Project show={show} />
-        <AboutMe show={show} />
-        <Contact show={show} />
-      </>
-    );
+  const [show, setShow] = useState(null);
+
+  const check = (value) =>{
+    return setShow(value)
+  }
+
+  return (
+    <>
+      <Navigation check={check}/>
+      <Main />
+      <Skill show={show} />
+      <Project show={show} />
+      <AboutMe show={show} />
+      <Contact show={show} />
+    </>
+  );
 };
 
 export default App;
