@@ -61,7 +61,7 @@
             flex-direction: column;
             justify-content: center;
             @include desktop{
-                height: 110%;
+                height: 120%;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -94,6 +94,10 @@
                 @include desktop{                
                     font-size: 11px;
                 }
+            }
+            &__link{
+                display: flex;
+                justify-content: center;
             }
         }
     }
