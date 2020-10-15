@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './settings.scss';
 
+import Background from './components/Background/Background';
 import Navigation from './components/Navigation/Navigation';
 import Main from './components/Main/Main';
 import Skill from './components/Skill/Skill';
@@ -18,6 +19,7 @@ const App = () =>{
 
   return (
     <>
+      <Background />
       <Navigation check={check}/>
       <Main />
       <Skill show={show} />

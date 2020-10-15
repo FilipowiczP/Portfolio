@@ -18,10 +18,8 @@ body{
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    background-image: url('./images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    background-color: black;
+
 }
 
 #root{
@@ -30,4 +28,6 @@ body{
     display: grid;
     grid-template-rows: 1fr 2fr 3fr 2fr 1fr;
     grid-template-columns: 1fr;
+    position: relative;
+    overflow: hidden;
 }

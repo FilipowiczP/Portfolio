@@ -1,0 +1,25 @@
+@import '../../animation.scss';
+
+.Background{
+
+    &__sky{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        top: 0;
+        z-index: -2;
+        animation: background 180s infinite ;
+    }
+    &__forest{
+        position: absolute;
+        object-fit: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+    }
+}
