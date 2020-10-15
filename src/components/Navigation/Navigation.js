@@ -38,7 +38,7 @@ const Navigation = ({check}) =>{
     });
     
     
-    if(window.innerWidth <= 700){
+    if(window.innerWidth <= 770){
         return(
             <>
             <nav className="navigation">

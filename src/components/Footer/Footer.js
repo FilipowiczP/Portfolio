@@ -7,10 +7,10 @@ import linkin from '../../images/linkin.png';
 const Footer = () =>{
     return(
         <footer className="footer">
-            <a href="https://github.com/FilipowiczP">
+            <a href="https://github.com/FilipowiczP" target="_blank" rel="noopener noreferrer">
                 <img src={github} alt="github" className="footer__link" />
             </a>
-            <a href="https://www.linkedin.com/in/przemysław-filipowicz-9b3546175/">
+            <a href="https://www.linkedin.com/in/przemysław-filipowicz-9b3546175/" target="_blank" rel="noopener noreferrer">
                 <img src={linkin} alt="linkin" className="footer__link"/>
             </a>
         </footer>
