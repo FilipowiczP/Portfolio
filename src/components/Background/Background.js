@@ -2,7 +2,7 @@ import React from 'react';
 import './background.scss'
 
 import forest from '../../images/forest.png';
-import background from '../../images/background.png';
+import background from '../../images/background.jpg';
 
 const Background = () =>{
     return(
