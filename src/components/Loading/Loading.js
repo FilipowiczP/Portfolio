@@ -6,13 +6,12 @@ const Loading = () => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            console.log('xd');
             setTimeout(false)}, 5000);
         return  () => clearTimeout(timer);
     },[])
 
     return (
-        <section className="loading" style={timeout ? { left: '0' } : { left: '-150%' }}>
+        <section className="loading" style={timeout ? { left: '0' } : { left: '150%' }}>
 
         </section>
     );
