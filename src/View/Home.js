@@ -8,6 +8,7 @@ import Skill from '../components/Skill/Skill';
 import Project from '../components/Project/Project';
 import AboutMe from '../components/AboutMe/AboutMe';
 import Contact from '../components/Contact/Contact';
+import Loading from '../components/Loading/Loading';
 
 const Home = () =>{
     
@@ -19,6 +20,7 @@ const Home = () =>{
 
     return (
         <>
+          <Loading />
           <Background />
           <Navigation check={check}/>
           <Main />
