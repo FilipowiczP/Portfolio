@@ -1,7 +1,8 @@
 @import '../../animation.scss';
 
-.Background{
+@import '../../mixins.scss';
 
+.Background{
     &__sky{
         position: absolute;
         top: 0;
@@ -11,7 +12,10 @@
         background-repeat: no-repeat;
         top: 0;
         z-index: -2;
-        animation: background 100s infinite linear alternate;
+        animation: background 35s infinite linear alternate;
+        @include desktop{
+            animation: background 100s infinite linear alternate;
+        }
     }
     &__forest{
         position: absolute;

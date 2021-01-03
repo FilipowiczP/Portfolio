@@ -12,7 +12,7 @@ const Loading = () => {
 
     return (
         <section className="loading" style={timeout ? { left: '0' } : { left: '150%' }}>
-
+            <h1 className="loading__load">Loading</h1>
         </section>
     );
 };
